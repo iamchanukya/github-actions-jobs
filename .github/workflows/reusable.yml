@@ -1,7 +1,9 @@
 name: Resusable workflow
-on: workflow_call
+on:
+    workflow_call:
+    
 jobs:
-    Deploy:
+    deploy:
         runs-on: ubuntu-latest
         steps:
            - name: Output Information

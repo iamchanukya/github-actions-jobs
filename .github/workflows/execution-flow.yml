@@ -61,7 +61,15 @@ jobs:
         with:
           name: dist-files
           path: dist
-  deploy:
-    needs: build
-    uses: ./.github/workflows/reusable.yml
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+      - name: Output contents
+        run: ls
+      - name: Deploying
+        run: echo "Deploying the app....."
+
+      
+
      
