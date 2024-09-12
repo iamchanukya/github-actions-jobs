@@ -63,5 +63,6 @@ jobs:
           path: dist
   deploy:
     needs: build
-    uses: ./.github/workflows/reusable.yml@master
+    uses: ./.github/workflows/reusable.yml@main
+    
      
